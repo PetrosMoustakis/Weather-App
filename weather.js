@@ -1,9 +1,5 @@
 $(document).ready(function () {
   let debounceTimeout = null;
-  //   $("#searchInput").on("input", function () {
-  //     clearTimeout(debounceTimeout);
-  //     debounceTimeout = setTimeout(() => getCity(this.value.trim()), 1500);
-  //   });
 
   $("#submit").on("click", function (e) {
     e.preventDefault();
