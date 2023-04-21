@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  background-color: rgb(156, 216, 231);
+}
+
+.center {
+  text-align: center;
+}
+
+.bot-gap {
+  margin-bottom: 20px;
+}
+
+.title {
+  color: #fff;
+  font-size: 28px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+input[type="text"].search {
+  width: 200px;
+  height: 50px;
+  background-image: url("../movies/moviesPics/searchpng.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 45px 45px;
+  padding-left: 45px;
+}
+
+input[type="text"].rounded {
+  border-radius: 18px;
+  border: 1.5px solid black;
+}
+
+.submit {
+  padding: 5px 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+input.search:focus {
+  outline: none;
+}
+
+.weather {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.weather-info {
+  width: 450px;
+  height: 450px;
+}
+
+.basic > div {
+  margin-bottom: 15px;
+}
+
+.block-text {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.weather-title {
+  color: #fff;
+  font-size: 28px;
+  font-family: monospace;
+  margin-bottom: 15px;
+}
+
+.weather-text {
+  color: #fff;
+  text-align: left;
+  font-family: monospace;
+  font-size: 18px;
+}
+
+.hidden {
+  display: none;
+}

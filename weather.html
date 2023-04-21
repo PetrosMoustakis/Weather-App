@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./weather.css">
+</head>
+
+<body>
+    <div class="center">
+        <div class="bot-gap">
+            <span class="title">Αναζήτηση Πόλης</span>
+        </div>
+        <div class="bot-gap">
+            <form>
+                <input type="text" class="search rounded" name="searchInput" id="searchInput"
+                    placeholder="Πληκτρολογήστε μια πόλη" autofocus />
+                <button id="submit" type="submit" class="submit">Submit</button>
+            </form>
+        </div>
+        <div class="weather hidden">
+            <div class="weather-info">
+                <div class="block-text weather-text text-left">
+                    <div id="name" class="block-text weather-title text-left">
+                        Όνομα Πόλης
+                    </div>
+                </div>
+                
+                <div class="block-text weather-text text-left">
+                    <div id="description" class="weather-text"></div>
+                </div>
+
+                <div class="block-text weather-text text-left">
+                    <div class="block-text weather-text text-left"><b>Θερμοκρασία: </b><span
+                            id="temp"></span><span>°C</span></div>
+                </div>
+                <div class="block-text weather-text text-left">
+                    <div class="block-text weather-text text-left"><b>Υγρασία: </b><span
+                            id="humidity"></span><span>%</span>
+                    </div>
+                </div>
+                <div class="block-text weather-text text-left">
+                    <div class="block-text weather-text text-left"><b>Σύννεφα: </b><span
+                            id="clouds"></span><span>%</span></div>
+                </div>
+                <div class="block-text weather-text text-left">
+                    <div class="weather-text"><b>Ζώνη ώρας: </b><span id="timezone"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="not-found hidden">
+        <span>Δε βρέθηκαν πόλεις σύμφωνα με τα κριτήρια αναζήτησης.</span>
+    </div>
+    <div class="error hidden">
+        <span>Παρουσιάστηκε σφάλμα κατά την κλήση της υπηρεσίας.</span>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <script type="module" src="./weather.js"></script>
+</body>
+
+</html>
